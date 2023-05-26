@@ -1,0 +1,1647 @@
+#separator:tab
+#html:true
+#guid column:1
+#tags column:14
+K%GfMN*S!-	shortest-word-distance-iii	245	Shortest Word Distance III	Algorithms	"<p>Given an array of strings <code>wordsDict</code> and two strings that already exist in the array <code>word1</code> and <code>word2</code>, return <em>the shortest distance between the occurrence of these two words in the list</em>.</p>
+
+<p><strong>Note</strong> that <code>word1</code> and <code>word2</code> may be the same. It is guaranteed that they represent <strong>two individual words</strong> in the list.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+<pre><strong>Input:</strong> wordsDict = [""practice"", ""makes"", ""perfect"", ""coding"", ""makes""], word1 = ""makes"", word2 = ""coding""
+<strong>Output:</strong> 1
+</pre><p><strong class=""example"">Example 2:</strong></p>
+<pre><strong>Input:</strong> wordsDict = [""practice"", ""makes"", ""perfect"", ""coding"", ""makes""], word1 = ""makes"", word2 = ""makes""
+<strong>Output:</strong> 3
+</pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= wordsDict.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= wordsDict[i].length &lt;= 10</code></li>
+	<li><code>wordsDict[i]</code> consists of lowercase English letters.</li>
+	<li><code>word1</code> and <code>word2</code> are in <code>wordsDict</code>.</li>
+</ul>
+"	<font color='orange'>Medium</font>	yes	482	98	135852	78997	58	0	array difficulty-medium-tag string	
+CEwnLb|.)`	arranging-coins	441	Arranging Coins	Algorithms	"<p>You have <code>n</code> coins and you want to build a staircase with these coins. The staircase consists of <code>k</code> rows where the <code>i<sup>th</sup></code> row has exactly <code>i</code> coins. The last row of the staircase <strong>may be</strong> incomplete.</p>
+
+<p>Given the integer <code>n</code>, return <em>the number of <strong>complete rows</strong> of the staircase you will build</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+<img alt="""" src=""https://assets.leetcode.com/uploads/2021/04/09/arrangecoins1-grid.jpg"" style=""width: 253px; height: 253px;"" />
+<pre>
+<strong>Input:</strong> n = 5
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> Because the 3<sup>rd</sup> row is incomplete, we return 2.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+<img alt="""" src=""https://assets.leetcode.com/uploads/2021/04/09/arrangecoins2-grid.jpg"" style=""width: 333px; height: 333px;"" />
+<pre>
+<strong>Input:</strong> n = 8
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> Because the 4<sup>th</sup> row is incomplete, we return 3.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
+</ul>
+"	<font color='green'>Easy</font>	no	3311	1216	777372	359645	46	47.7056319639449	binary-search difficulty-easy-tag math	
+D*zVR!i|`w	find-permutation	484	Find Permutation	Algorithms	"<p>A permutation <code>perm</code> of <code>n</code>&nbsp;integers of all the integers in the range <code>[1, n]</code> can be represented as a string <code>s</code> of length <code>n - 1</code> where:</p>
+
+<ul>
+	<li><code>s[i] == &#39;I&#39;</code> if <code>perm[i] &lt; perm[i + 1]</code>, and</li>
+	<li><code>s[i] == &#39;D&#39;</code> if <code>perm[i] &gt; perm[i + 1]</code>.</li>
+</ul>
+
+<p>Given a string <code>s</code>, reconstruct the lexicographically smallest permutation <code>perm</code> and return it.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;I&quot;
+<strong>Output:</strong> [1,2]
+<strong>Explanation:</strong> [1,2] is the only legal permutation that can represented by s, where the number 1 and 2 construct an increasing relationship.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;DI&quot;
+<strong>Output:</strong> [2,1,3]
+<strong>Explanation:</strong> Both [2,1,3] and [3,1,2] can be represented as &quot;DI&quot;, but since we want to find the smallest lexicographical permutation, you should return [2,1,3]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>s[i]</code> is either <code>&#39;I&#39;</code> or <code>&#39;D&#39;</code>.</li>
+</ul>
+"	<font color='orange'>Medium</font>	yes	652	122	54013	36128	66	0	array difficulty-medium-tag greedy stack string	Write out possible answers and see if there is a pattern with tem list as many as possible
+QSy/M$DUV9	next-greater-element-i	496	Next Greater Element I	Algorithms	"<p>The <strong>next greater element</strong> of some element <code>x</code> in an array is the <strong>first greater</strong> element that is <strong>to the right</strong> of <code>x</code> in the same array.</p>
+
+<p>You are given two <strong>distinct 0-indexed</strong> integer arrays <code>nums1</code> and <code>nums2</code>, where <code>nums1</code> is a subset of <code>nums2</code>.</p>
+
+<p>For each <code>0 &lt;= i &lt; nums1.length</code>, find the index <code>j</code> such that <code>nums1[i] == nums2[j]</code> and determine the <strong>next greater element</strong> of <code>nums2[j]</code> in <code>nums2</code>. If there is no next greater element, then the answer for this query is <code>-1</code>.</p>
+
+<p>Return <em>an array </em><code>ans</code><em> of length </em><code>nums1.length</code><em> such that </em><code>ans[i]</code><em> is the <strong>next greater element</strong> as described above.</em></p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums1 = [4,1,2], nums2 = [1,3,4,2]
+<strong>Output:</strong> [-1,3,-1]
+<strong>Explanation:</strong> The next greater element for each value of nums1 is as follows:
+- 4 is underlined in nums2 = [1,3,<u>4</u>,2]. There is no next greater element, so the answer is -1.
+- 1 is underlined in nums2 = [<u>1</u>,3,4,2]. The next greater element is 3.
+- 2 is underlined in nums2 = [1,3,4,<u>2</u>]. There is no next greater element, so the answer is -1.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums1 = [2,4], nums2 = [1,2,3,4]
+<strong>Output:</strong> [3,-1]
+<strong>Explanation:</strong> The next greater element for each value of nums1 is as follows:
+- 2 is underlined in nums2 = [1,<u>2</u>,3,4]. The next greater element is 3.
+- 4 is underlined in nums2 = [1,2,3,<u>4</u>]. There is no next greater element, so the answer is -1.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums1.length &lt;= nums2.length &lt;= 1000</code></li>
+	<li><code>0 &lt;= nums1[i], nums2[i] &lt;= 10<sup>4</sup></code></li>
+	<li>All integers in <code>nums1</code> and <code>nums2</code> are <strong>unique</strong>.</li>
+	<li>All the integers of <code>nums1</code> also appear in <code>nums2</code>.</li>
+</ul>
+
+<p>&nbsp;</p>
+<strong>Follow up:</strong> Could you find an <code>O(nums1.length + nums2.length)</code> solution?"	<font color='green'>Easy</font>	no	6139	436	741013	528874	71	56.21012096207838	array difficulty-easy-tag hash-table monotonic-stack stack	Use a monotonic stack with hash table elimination
+vxJ(YgR3t5	next-greater-element-ii	503	Next Greater Element II	Algorithms	"<p>Given a circular integer array <code>nums</code> (i.e., the next element of <code>nums[nums.length - 1]</code> is <code>nums[0]</code>), return <em>the <strong>next greater number</strong> for every element in</em> <code>nums</code>.</p>
+
+<p>The <strong>next greater number</strong> of a number <code>x</code> is the first greater number to its traversing-order next in the array, which means you could search circularly to find its next greater number. If it doesn&#39;t exist, return <code>-1</code> for this number.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,2,1]
+<strong>Output:</strong> [2,-1,2]
+Explanation: The first 1&#39;s next greater number is 2; 
+The number 2 can&#39;t find next greater number. 
+The second 1&#39;s next greater number needs to search circularly, which is also 2.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,2,3,4,3]
+<strong>Output:</strong> [2,3,4,-1,4]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
+</ul>
+"	<font color='orange'>Medium</font>	no	6737	171	485707	307039	63	53.777699016121325	array difficulty-medium-tag monotonic-stack stack	Use it on the array twice
+E9Q-qde87O	baseball-game	682	Baseball Game	Algorithms	"<p>You are keeping the scores for a baseball game with strange rules. At the beginning of the game, you start with an empty record.</p>
+
+<p>You are given a list of strings <code>operations</code>, where <code>operations[i]</code> is the <code>i<sup>th</sup></code> operation you must apply to the record and is one of the following:</p>
+
+<ul>
+	<li>An integer <code>x</code>.
+
+	<ul>
+		<li>Record a new score of <code>x</code>.</li>
+	</ul>
+	</li>
+	<li><code>&#39;+&#39;</code>.
+	<ul>
+		<li>Record a new score that is the sum of the previous two scores.</li>
+	</ul>
+	</li>
+	<li><code>&#39;D&#39;</code>.
+	<ul>
+		<li>Record a new score that is the double of the previous score.</li>
+	</ul>
+	</li>
+	<li><code>&#39;C&#39;</code>.
+	<ul>
+		<li>Invalidate the previous score, removing it from the record.</li>
+	</ul>
+	</li>
+</ul>
+
+<p>Return <em>the sum of all the scores on the record after applying all the operations</em>.</p>
+
+<p>The test cases are generated such that the answer and all intermediate calculations fit in a <strong>32-bit</strong> integer and that all operations are valid.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> ops = [&quot;5&quot;,&quot;2&quot;,&quot;C&quot;,&quot;D&quot;,&quot;+&quot;]
+<strong>Output:</strong> 30
+<strong>Explanation:</strong>
+&quot;5&quot; - Add 5 to the record, record is now [5].
+&quot;2&quot; - Add 2 to the record, record is now [5, 2].
+&quot;C&quot; - Invalidate and remove the previous score, record is now [5].
+&quot;D&quot; - Add 2 * 5 = 10 to the record, record is now [5, 10].
+&quot;+&quot; - Add 5 + 10 = 15 to the record, record is now [5, 10, 15].
+The total sum is 5 + 10 + 15 = 30.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> ops = [&quot;5&quot;,&quot;-2&quot;,&quot;4&quot;,&quot;C&quot;,&quot;D&quot;,&quot;9&quot;,&quot;+&quot;,&quot;+&quot;]
+<strong>Output:</strong> 27
+<strong>Explanation:</strong>
+&quot;5&quot; - Add 5 to the record, record is now [5].
+&quot;-2&quot; - Add -2 to the record, record is now [5, -2].
+&quot;4&quot; - Add 4 to the record, record is now [5, -2, 4].
+&quot;C&quot; - Invalidate and remove the previous score, record is now [5, -2].
+&quot;D&quot; - Add 2 * -2 = -4 to the record, record is now [5, -2, -4].
+&quot;9&quot; - Add 9 to the record, record is now [5, -2, -4, 9].
+&quot;+&quot; - Add -4 + 9 = 5 to the record, record is now [5, -2, -4, 9, 5].
+&quot;+&quot; - Add 9 + 5 = 14 to the record, record is now [5, -2, -4, 9, 5, 14].
+The total sum is 5 + -2 + -4 + 9 + 5 + 14 = 27.
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> ops = [&quot;1&quot;,&quot;C&quot;]
+<strong>Output:</strong> 0
+<strong>Explanation:</strong>
+&quot;1&quot; - Add 1 to the record, record is now [1].
+&quot;C&quot; - Invalidate and remove the previous score, record is now [].
+Since the record is empty, the total sum is 0.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= operations.length &lt;= 1000</code></li>
+	<li><code>operations[i]</code> is <code>&quot;C&quot;</code>, <code>&quot;D&quot;</code>, <code>&quot;+&quot;</code>, or a string representing an integer in the range <code>[-3 * 10<sup>4</sup>, 3 * 10<sup>4</sup>]</code>.</li>
+	<li>For operation <code>&quot;+&quot;</code>, there will always be at least two previous scores on the record.</li>
+	<li>For operations <code>&quot;C&quot;</code> and <code>&quot;D&quot;</code>, there will always be at least one previous score on the record.</li>
+</ul>
+"	<font color='green'>Easy</font>	no	2307	1799	339920	253243	74	49.3934968880985	array difficulty-easy-tag simulation stack	
+JvJ5XEa/@;	search-in-a-sorted-array-of-unknown-size	702	Search in a Sorted Array of Unknown Size	Algorithms	"<p>This is an <strong><em>interactive problem</em></strong>.</p>
+
+<p>You have a sorted array of <strong>unique</strong> elements and an <strong>unknown size</strong>. You do not have an access to the array but you can use the <code>ArrayReader</code> interface to access it. You can call <code>ArrayReader.get(i)</code> that:</p>
+
+<ul>
+	<li>returns the value at the <code>i<sup>th</sup></code> index (<strong>0-indexed</strong>) of the secret array (i.e., <code>secret[i]</code>), or</li>
+	<li>returns <code>2<sup>31</sup> - 1</code> if the <code>i</code> is out of the boundary of the array.</li>
+</ul>
+
+<p>You are also given an integer <code>target</code>.</p>
+
+<p>Return the index <code>k</code> of the hidden array where <code>secret[k] == target</code> or return <code>-1</code> otherwise.</p>
+
+<p>You must write an algorithm with <code>O(log n)</code> runtime complexity.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> secret = [-1,0,3,5,9,12], target = 9
+<strong>Output:</strong> 4
+<strong>Explanation:</strong> 9 exists in secret and its index is 4.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> secret = [-1,0,3,5,9,12], target = 2
+<strong>Output:</strong> -1
+<strong>Explanation:</strong> 2 does not exist in secret so return -1.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= secret.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>-10<sup>4</sup> &lt;= secret[i], target &lt;= 10<sup>4</sup></code></li>
+	<li><code>secret</code> is sorted in a strictly increasing order.</li>
+</ul>
+"	<font color='orange'>Medium</font>	yes	852	44	122226	87472	71	22.00916177704637	array binary-search difficulty-medium-tag interactive	Expontial search is a log n algo, any algo that reduces search space by a constant factor each time is log
+Hcs*mpYlOz	subarray-product-less-than-k	713	Subarray Product Less Than K	Algorithms	"<p>Given an array of integers <code>nums</code> and an integer <code>k</code>, return <em>the number of contiguous subarrays where the product of all the elements in the subarray is strictly less than </em><code>k</code>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [10,5,2,6], k = 100
+<strong>Output:</strong> 8
+<strong>Explanation:</strong> The 8 subarrays that have product less than 100 are:
+[10], [5], [2], [6], [10, 5], [5, 2], [2, 6], [5, 2, 6]
+Note that [10, 5, 2] is not included as the product of 100 is not strictly less than k.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,2,3], k = 0
+<strong>Output:</strong> 0
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 1000</code></li>
+	<li><code>0 &lt;= k &lt;= 10<sup>6</sup></code></li>
+</ul>
+"	<font color='orange'>Medium</font>	no	5377	171	498807	229131	45	57.97622177138872	array difficulty-medium-tag sliding-window	
+DJ27jSr15J	daily-temperatures	739	Daily Temperatures	Algorithms	"<p>Given an array of integers <code>temperatures</code> represents the daily temperatures, return <em>an array</em> <code>answer</code> <em>such that</em> <code>answer[i]</code> <em>is the number of days you have to wait after the</em> <code>i<sup>th</sup></code> <em>day to get a warmer temperature</em>. If there is no future day for which this is possible, keep <code>answer[i] == 0</code> instead.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+<pre><strong>Input:</strong> temperatures = [73,74,75,71,69,72,76,73]
+<strong>Output:</strong> [1,1,4,2,1,1,0,0]
+</pre><p><strong class=""example"">Example 2:</strong></p>
+<pre><strong>Input:</strong> temperatures = [30,40,50,60]
+<strong>Output:</strong> [1,1,1,0]
+</pre><p><strong class=""example"">Example 3:</strong></p>
+<pre><strong>Input:</strong> temperatures = [30,60,90]
+<strong>Output:</strong> [1,1,0]
+</pre>
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;=&nbsp;temperatures.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>30 &lt;=&nbsp;temperatures[i] &lt;= 100</code></li>
+</ul>
+"	<font color='orange'>Medium</font>	no	10641	239	927960	614594	66	71.66287538439745	array difficulty-medium-tag monotonic-stack stack	Use cached answers for space efficnet soln
+x<w=2<m}*:	score-of-parentheses	856	Score of Parentheses	Algorithms	"<p>Given a balanced parentheses string <code>s</code>, return <em>the <strong>score</strong> of the string</em>.</p>
+
+<p>The <strong>score</strong> of a balanced parentheses string is based on the following rule:</p>
+
+<ul>
+	<li><code>&quot;()&quot;</code> has score <code>1</code>.</li>
+	<li><code>AB</code> has score <code>A + B</code>, where <code>A</code> and <code>B</code> are balanced parentheses strings.</li>
+	<li><code>(A)</code> has score <code>2 * A</code>, where <code>A</code> is a balanced parentheses string.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;()&quot;
+<strong>Output:</strong> 1
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;(())&quot;
+<strong>Output:</strong> 2
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;()()&quot;
+<strong>Output:</strong> 2
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>2 &lt;= s.length &lt;= 50</code></li>
+	<li><code>s</code> consists of only <code>&#39;(&#39;</code> and <code>&#39;)&#39;</code>.</li>
+	<li><code>s</code> is a balanced parentheses string.</li>
+</ul>
+"	<font color='orange'>Medium</font>	no	5028	171	244618	158101	64	55.28274728159279	difficulty-medium-tag stack string	Come up with a formula for the score, turns out this can be done greedily
+zuWTgMes3I	validate-stack-sequences	946	Validate Stack Sequences	Algorithms	"<p>Given two integer arrays <code>pushed</code> and <code>popped</code> each with distinct values, return <code>true</code><em> if this could have been the result of a sequence of push and pop operations on an initially empty stack, or </em><code>false</code><em> otherwise.</em></p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> pushed = [1,2,3,4,5], popped = [4,5,3,2,1]
+<strong>Output:</strong> true
+<strong>Explanation:</strong> We might do the following sequence:
+push(1), push(2), push(3), push(4),
+pop() -&gt; 4,
+push(5),
+pop() -&gt; 5, pop() -&gt; 3, pop() -&gt; 2, pop() -&gt; 1
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> pushed = [1,2,3,4,5], popped = [4,3,5,1,2]
+<strong>Output:</strong> false
+<strong>Explanation:</strong> 1 cannot be popped before 2.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= pushed.length &lt;= 1000</code></li>
+	<li><code>0 &lt;= pushed[i] &lt;= 1000</code></li>
+	<li>All the elements of <code>pushed</code> are <strong>unique</strong>.</li>
+	<li><code>popped.length == pushed.length</code></li>
+	<li><code>popped</code> is a permutation of <code>pushed</code>.</li>
+</ul>
+"	<font color='orange'>Medium</font>	no	5521	106	389142	270165	69	71.43439798423323	array difficulty-medium-tag simulation stack	Remeber to write cases for all exit coindions of a while loop
+iN!QZgMEL$	max-consecutive-ones-iii	1004	Max Consecutive Ones III	Algorithms	"<p>Given a binary array <code>nums</code> and an integer <code>k</code>, return <em>the maximum number of consecutive </em><code>1</code><em>&#39;s in the array if you can flip at most</em> <code>k</code> <code>0</code>&#39;s.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2
+<strong>Output:</strong> 6
+<strong>Explanation:</strong> [1,1,1,0,0,<u><strong>1</strong>,1,1,1,1,<strong>1</strong></u>]
+Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], k = 3
+<strong>Output:</strong> 10
+<strong>Explanation:</strong> [0,0,<u>1,1,<strong>1</strong>,<strong>1</strong>,1,1,1,<strong>1</strong>,1,1</u>,0,0,0,1,1,1,1]
+Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>
+	<li><code>0 &lt;= k &lt;= nums.length</code></li>
+</ul>
+"	<font color='orange'>Medium</font>	no	6445	73	476657	301061	63	51.4950234065083	array binary-search difficulty-medium-tag prefix-sum sliding-window	When deciding whether to expand sliding window with pointer two check if its possible to look ahead at the next item (the one that pointer 2 is currently pointing to) to see if it is feasible to include it. If it is then we can update our window statistics if not we can quit and p2 will be in the correct place to continue from that point.
+pw;4{YJ>n)	remove-outermost-parentheses	1021	Remove Outermost Parentheses	Algorithms	"<p>A valid parentheses string is either empty <code>&quot;&quot;</code>, <code>&quot;(&quot; + A + &quot;)&quot;</code>, or <code>A + B</code>, where <code>A</code> and <code>B</code> are valid parentheses strings, and <code>+</code> represents string concatenation.</p>
+
+<ul>
+	<li>For example, <code>&quot;&quot;</code>, <code>&quot;()&quot;</code>, <code>&quot;(())()&quot;</code>, and <code>&quot;(()(()))&quot;</code> are all valid parentheses strings.</li>
+</ul>
+
+<p>A valid parentheses string <code>s</code> is primitive if it is nonempty, and there does not exist a way to split it into <code>s = A + B</code>, with <code>A</code> and <code>B</code> nonempty valid parentheses strings.</p>
+
+<p>Given a valid parentheses string <code>s</code>, consider its primitive decomposition: <code>s = P<sub>1</sub> + P<sub>2</sub> + ... + P<sub>k</sub></code>, where <code>P<sub>i</sub></code> are primitive valid parentheses strings.</p>
+
+<p>Return <code>s</code> <em>after removing the outermost parentheses of every primitive string in the primitive decomposition of </em><code>s</code>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;(()())(())&quot;
+<strong>Output:</strong> &quot;()()()&quot;
+<strong>Explanation:</strong> 
+The input string is &quot;(()())(())&quot;, with primitive decomposition &quot;(()())&quot; + &quot;(())&quot;.
+After removing outer parentheses of each part, this is &quot;()()&quot; + &quot;()&quot; = &quot;()()()&quot;.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;(()())(())(()(()))&quot;
+<strong>Output:</strong> &quot;()()()()(())&quot;
+<strong>Explanation:</strong> 
+The input string is &quot;(()())(())(()(()))&quot;, with primitive decomposition &quot;(()())&quot; + &quot;(())&quot; + &quot;(()(()))&quot;.
+After removing outer parentheses of each part, this is &quot;()()&quot; + &quot;()&quot; + &quot;()(())&quot; = &quot;()()()()(())&quot;.
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;()()&quot;
+<strong>Output:</strong> &quot;&quot;
+<strong>Explanation:</strong> 
+The input string is &quot;()()&quot;, with primitive decomposition &quot;()&quot; + &quot;()&quot;.
+After removing outer parentheses of each part, this is &quot;&quot; + &quot;&quot; = &quot;&quot;.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>s[i]</code> is either <code>&#39;(&#39;</code> or <code>&#39;)&#39;</code>.</li>
+	<li><code>s</code> is a valid parentheses string.</li>
+</ul>
+"	<font color='green'>Easy</font>	no	2103	1416	273190	220733	80	31.647723849328706	difficulty-easy-tag stack string	
+FyraEjVsw,	find-k-length-substrings-with-no-repeated-characters	1100	Find K-Length Substrings With No Repeated Characters	Algorithms	"<p>Given a string <code>s</code> and an integer <code>k</code>, return <em>the number of substrings in </em><code>s</code><em> of length </em><code>k</code><em> with no repeated characters</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;havefunonleetcode&quot;, k = 5
+<strong>Output:</strong> 6
+<strong>Explanation:</strong> There are 6 substrings they are: &#39;havef&#39;,&#39;avefu&#39;,&#39;vefun&#39;,&#39;efuno&#39;,&#39;etcod&#39;,&#39;tcode&#39;.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;home&quot;, k = 5
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> Notice k can be larger than the length of s. In this case, it is not possible to find any substring.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>s</code> consists of lowercase English letters.</li>
+	<li><code>1 &lt;= k &lt;= 10<sup>4</sup></code></li>
+</ul>
+"	<font color='orange'>Medium</font>	yes	507	9	47179	35230	74	25.918849775891335	difficulty-medium-tag hash-table sliding-window string	Go through and find all cases for condition, check the intial count is actually doing what you think more planning or each subproblem
+K^~F(F/Ts/	maximum-nesting-depth-of-two-valid-parentheses-strings	1111	Maximum Nesting Depth of Two Valid Parentheses Strings	Algorithms	"<p>A string is a <em>valid parentheses string</em>&nbsp;(denoted VPS) if and only if it consists of <code>&quot;(&quot;</code> and <code>&quot;)&quot;</code> characters only, and:</p>
+
+<ul>
+	<li>It is the empty string, or</li>
+	<li>It can be written as&nbsp;<code>AB</code>&nbsp;(<code>A</code>&nbsp;concatenated with&nbsp;<code>B</code>), where&nbsp;<code>A</code>&nbsp;and&nbsp;<code>B</code>&nbsp;are VPS&#39;s, or</li>
+	<li>It can be written as&nbsp;<code>(A)</code>, where&nbsp;<code>A</code>&nbsp;is a VPS.</li>
+</ul>
+
+<p>We can&nbsp;similarly define the <em>nesting depth</em> <code>depth(S)</code> of any VPS <code>S</code> as follows:</p>
+
+<ul>
+	<li><code>depth(&quot;&quot;) = 0</code></li>
+	<li><code>depth(A + B) = max(depth(A), depth(B))</code>, where <code>A</code> and <code>B</code> are VPS&#39;s</li>
+	<li><code>depth(&quot;(&quot; + A + &quot;)&quot;) = 1 + depth(A)</code>, where <code>A</code> is a VPS.</li>
+</ul>
+
+<p>For example,&nbsp; <code>&quot;&quot;</code>,&nbsp;<code>&quot;()()&quot;</code>, and&nbsp;<code>&quot;()(()())&quot;</code>&nbsp;are VPS&#39;s (with nesting depths 0, 1, and 2), and <code>&quot;)(&quot;</code> and <code>&quot;(()&quot;</code> are not VPS&#39;s.</p>
+
+<p>&nbsp;</p>
+
+<p>Given a VPS <font face=""monospace"">seq</font>, split it into two disjoint subsequences <code>A</code> and <code>B</code>, such that&nbsp;<code>A</code> and <code>B</code> are VPS&#39;s (and&nbsp;<code>A.length + B.length = seq.length</code>).</p>
+
+<p>Now choose <strong>any</strong> such <code>A</code> and <code>B</code> such that&nbsp;<code>max(depth(A), depth(B))</code> is the minimum possible value.</p>
+
+<p>Return an <code>answer</code> array (of length <code>seq.length</code>) that encodes such a&nbsp;choice of <code>A</code> and <code>B</code>:&nbsp; <code>answer[i] = 0</code> if <code>seq[i]</code> is part of <code>A</code>, else <code>answer[i] = 1</code>.&nbsp; Note that even though multiple answers may exist, you may return any of them.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> seq = &quot;(()())&quot;
+<strong>Output:</strong> [0,1,1,1,1,0]
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> seq = &quot;()(())()&quot;
+<strong>Output:</strong> [0,0,0,1,1,0,1,1]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= seq.size &lt;= 10000</code></li>
+</ul>
+"	<font color='orange'>Medium</font>	no	374	1521	31861	23224	72	13.752360987320206	difficulty-medium-tag stack string	Sharing depth between the two strings
+bEM:QZK+50	check-if-a-number-is-majority-element-in-a-sorted-array	1150	Check If a Number Is Majority Element in a Sorted Array	Algorithms	"<p>Given an integer array <code>nums</code> sorted in non-decreasing order and an integer <code>target</code>, return <code>true</code> <em>if</em> <code>target</code> <em>is a <strong>majority</strong> element, or </em><code>false</code><em> otherwise</em>.</p>
+
+<p>A <strong>majority</strong> element in an array <code>nums</code> is an element that appears more than <code>nums.length / 2</code> times in the array.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [2,4,5,5,5,5,5,6,6], target = 5
+<strong>Output:</strong> true
+<strong>Explanation:</strong> The value 5 appears 5 times and the length of the array is 9.
+Thus, 5 is a majority element because 5 &gt; 9/2 is true.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [10,100,101,101], target = 101
+<strong>Output:</strong> false
+<strong>Explanation:</strong> The value 101 appears 2 times and the length of the array is 4.
+Thus, 101 is not a majority element because 2 &gt; 4/2 is false.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
+	<li><code>1 &lt;= nums[i], target &lt;= 10<sup>9</sup></code></li>
+	<li><code>nums</code> is sorted in non-decreasing order.</li>
+</ul>
+"	<font color='green'>Easy</font>	yes	382	33	67924	38883	57	14.809524403346593	array binary-search difficulty-easy-tag	
+M5,q-sCZD4	minimum-swaps-to-group-all-1s-together	1151	Minimum Swaps to Group All 1's Together	Algorithms	"<p>Given a&nbsp;binary array <code>data</code>, return&nbsp;the minimum number of swaps required to group all <code>1</code>&rsquo;s present in the array together in <strong>any place</strong> in the array.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> data = [1,0,1,0,1]
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> There are 3 ways to group all 1&#39;s together:
+[1,1,1,0,0] using 1 swap.
+[0,1,1,1,0] using 2 swaps.
+[0,0,1,1,1] using 1 swap.
+The minimum is 1.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> data = [0,0,0,1,0]
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> Since there is only one 1 in the array, no swaps are needed.
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> data = [1,0,1,0,1,0,0,1,1,0,1]
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> One possible solution that uses 3 swaps is [0,0,0,0,0,1,1,1,1,1,1].
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= data.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>data[i]</code> is either <code>0</code> or <code>1</code>.</li>
+</ul>
+"	<font color='orange'>Medium</font>	yes	1099	13	91776	55920	60	16.581405490736927	array difficulty-medium-tag sliding-window	Think of the 0 more like holes
+n0KwY?{ZbC	swap-for-longest-repeated-character-substring	1156	Swap For Longest Repeated Character Substring	Algorithms	"<p>You are given a string <code>text</code>. You can swap two of the characters in the <code>text</code>.</p>
+
+<p>Return <em>the length of the longest substring with repeated characters</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> text = &quot;ababa&quot;
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> We can swap the first &#39;b&#39; with the last &#39;a&#39;, or the last &#39;b&#39; with the first &#39;a&#39;. Then, the longest repeated character substring is &quot;aaa&quot; with length 3.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> text = &quot;aaabaaa&quot;
+<strong>Output:</strong> 6
+<strong>Explanation:</strong> Swap &#39;b&#39; with the last &#39;a&#39; (or the first &#39;a&#39;), and we get longest repeated character substring &quot;aaaaaa&quot; with length 6.
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> text = &quot;aaaaa&quot;
+<strong>Output:</strong> 5
+<strong>Explanation:</strong> No need to swap, longest repeated character substring is &quot;aaaaa&quot; with length is 5.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= text.length &lt;= 2 * 10<sup>4</sup></code></li>
+	<li><code>text</code> consist of lowercase English characters only.</li>
+</ul>
+"	<font color='orange'>Medium</font>	no	903	80	60721	27248	44	13.434746287482877	difficulty-medium-tag sliding-window string	Compare with outside count
+p?VfM{uk:~	compare-strings-by-frequency-of-the-smallest-character	1170	Compare Strings by Frequency of the Smallest Character	Algorithms	"<p>Let the function <code>f(s)</code> be the <strong>frequency of the lexicographically smallest character</strong> in a non-empty string <code>s</code>. For example, if <code>s = &quot;dcce&quot;</code> then <code>f(s) = 2</code> because the lexicographically smallest character is <code>&#39;c&#39;</code>, which has a frequency of 2.</p>
+
+<p>You are given an array of strings <code>words</code> and another array of query strings <code>queries</code>. For each query <code>queries[i]</code>, count the <strong>number of words</strong> in <code>words</code> such that <code>f(queries[i])</code> &lt; <code>f(W)</code> for each <code>W</code> in <code>words</code>.</p>
+
+<p>Return <em>an integer array </em><code>answer</code><em>, where each </em><code>answer[i]</code><em> is the answer to the </em><code>i<sup>th</sup></code><em> query</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> queries = [&quot;cbd&quot;], words = [&quot;zaaaz&quot;]
+<strong>Output:</strong> [1]
+<strong>Explanation:</strong> On the first query we have f(&quot;cbd&quot;) = 1, f(&quot;zaaaz&quot;) = 3 so f(&quot;cbd&quot;) &lt; f(&quot;zaaaz&quot;).
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> queries = [&quot;bbb&quot;,&quot;cc&quot;], words = [&quot;a&quot;,&quot;aa&quot;,&quot;aaa&quot;,&quot;aaaa&quot;]
+<strong>Output:</strong> [1,2]
+<strong>Explanation:</strong> On the first query only f(&quot;bbb&quot;) &lt; f(&quot;aaaa&quot;). On the second query both f(&quot;aaa&quot;) and f(&quot;aaaa&quot;) are both &gt; f(&quot;cc&quot;).
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= queries.length &lt;= 2000</code></li>
+	<li><code>1 &lt;= words.length &lt;= 2000</code></li>
+	<li><code>1 &lt;= queries[i].length, words[i].length &lt;= 10</code></li>
+	<li><code>queries[i][j]</code>, <code>words[i][j]</code> consist of lowercase English letters.</li>
+</ul>
+"	<font color='orange'>Medium</font>	no	626	951	119075	73307	61	18.268038569592214	array binary-search difficulty-medium-tag hash-table sorting string	Look at limits in tab it may surprise u
+nIZHa:Ef+|	intersection-of-three-sorted-arrays	1213	Intersection of Three Sorted Arrays	Algorithms	"<p>Given three integer arrays <code>arr1</code>, <code>arr2</code> and <code>arr3</code>&nbsp;<strong>sorted</strong> in <strong>strictly increasing</strong> order, return a sorted array of <strong>only</strong>&nbsp;the&nbsp;integers that appeared in <strong>all</strong> three arrays.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> arr1 = [1,2,3,4,5], arr2 = [1,2,5,7,9], arr3 = [1,3,4,5,8]
+<strong>Output:</strong> [1,5]
+<strong>Explanation: </strong>Only 1 and 5 appeared in the three arrays.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> arr1 = [197,418,523,876,1356], arr2 = [501,880,1593,1710,1870], arr3 = [521,682,1337,1395,1764]
+<strong>Output:</strong> []
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= arr1.length, arr2.length, arr3.length &lt;= 1000</code></li>
+	<li><code>1 &lt;= arr1[i], arr2[i], arr3[i] &lt;= 2000</code></li>
+</ul>
+"	<font color='green'>Easy</font>	yes	543	24	97682	78056	79	0	array binary-search counting difficulty-easy-tag hash-table	Check bounds whenever incrementing pointer
+I?LXfdd!~a	count-number-of-nice-subarrays	1248	Count Number of Nice Subarrays	Algorithms	"<p>Given an array of integers <code>nums</code> and an integer <code>k</code>. A continuous subarray is called <strong>nice</strong> if there are <code>k</code> odd numbers on it.</p>
+
+<p>Return <em>the number of <strong>nice</strong> sub-arrays</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,1,2,1,1], k = 3
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> The only sub-arrays with 3 odd numbers are [1,1,2,1] and [1,2,1,1].
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [2,4,6], k = 1
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> There is no odd numbers in the array.
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [2,2,2,1,2,2,1,2,2,2], k = 2
+<strong>Output:</strong> 16
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 50000</code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 10^5</code></li>
+	<li><code>1 &lt;= k &lt;= nums.length</code></li>
+</ul>"	<font color='orange'>Medium</font>	no	2926	61	135185	82893	61	44.92055354805092	array difficulty-medium-tag hash-table math sliding-window	3 pointers
+weltQ580(V	number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold	1343	Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold	Algorithms	"<p>Given an array of integers <code>arr</code> and two integers <code>k</code> and <code>threshold</code>, return <em>the number of sub-arrays of size </em><code>k</code><em> and average greater than or equal to </em><code>threshold</code>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> arr = [2,2,2,2,5,5,5,8], k = 3, threshold = 4
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> Sub-arrays [2,5,5],[5,5,5] and [5,5,8] have averages 4, 5 and 6 respectively. All other sub-arrays of size 3 have averages less than 4 (the threshold).
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> arr = [11,13,17,23,29,31,7,5,2,3], k = 3, threshold = 5
+<strong>Output:</strong> 6
+<strong>Explanation:</strong> The first 6 sub-arrays of size 3 have averages greater than 5. Note that averages are not integers.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= arr.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= arr[i] &lt;= 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= k &lt;= arr.length</code></li>
+	<li><code>0 &lt;= threshold &lt;= 10<sup>4</sup></code></li>
+</ul>
+"	<font color='orange'>Medium</font>	no	1171	82	86236	58332	67	18.20124818868525	array difficulty-medium-tag sliding-window	
+r_|6j#HMB|	check-if-n-and-its-double-exist	1346	Check If N and Its Double Exist	Algorithms	"<p>Given an array <code>arr</code> of integers, check if there exist two indices <code>i</code> and <code>j</code> such that :</p>
+
+<ul>
+	<li><code>i != j</code></li>
+	<li><code>0 &lt;= i, j &lt; arr.length</code></li>
+	<li><code>arr[i] == 2 * arr[j]</code></li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> arr = [10,2,5,3]
+<strong>Output:</strong> true
+<strong>Explanation:</strong> For i = 0 and j = 2, arr[i] == 10 == 2 * 5 == 2 * arr[j]
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> arr = [3,1,7,11]
+<strong>Output:</strong> false
+<strong>Explanation:</strong> There is no i and j that satisfy the conditions.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>2 &lt;= arr.length &lt;= 500</code></li>
+	<li><code>-10<sup>3</sup> &lt;= arr[i] &lt;= 10<sup>3</sup></code></li>
+</ul>
+"	<font color='green'>Easy</font>	no	1652	176	778969	285232	36	32.86563346642627	array binary-search difficulty-easy-tag hash-table sorting two-pointers	Should have been obvious from two pointer
+I:J2B&7J$0	number-of-substrings-containing-all-three-characters	1358	Number of Substrings Containing All Three Characters	Algorithms	"<p>Given a string <code>s</code>&nbsp;consisting only of characters <em>a</em>, <em>b</em> and <em>c</em>.</p>
+
+<p>Return the number of substrings containing <b>at least</b>&nbsp;one occurrence of all these characters <em>a</em>, <em>b</em> and <em>c</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;abcabc&quot;
+<strong>Output:</strong> 10
+<strong>Explanation:</strong> The substrings containing&nbsp;at least&nbsp;one occurrence of the characters&nbsp;<em>a</em>,&nbsp;<em>b</em>&nbsp;and&nbsp;<em>c are &quot;</em>abc<em>&quot;, &quot;</em>abca<em>&quot;, &quot;</em>abcab<em>&quot;, &quot;</em>abcabc<em>&quot;, &quot;</em>bca<em>&quot;, &quot;</em>bcab<em>&quot;, &quot;</em>bcabc<em>&quot;, &quot;</em>cab<em>&quot;, &quot;</em>cabc<em>&quot; </em>and<em> &quot;</em>abc<em>&quot; </em>(<strong>again</strong>)<em>. </em>
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;aaacb&quot;
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> The substrings containing&nbsp;at least&nbsp;one occurrence of the characters&nbsp;<em>a</em>,&nbsp;<em>b</em>&nbsp;and&nbsp;<em>c are &quot;</em>aaacb<em>&quot;, &quot;</em>aacb<em>&quot; </em>and<em> &quot;</em>acb<em>&quot;.</em><em> </em>
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;abc&quot;
+<strong>Output:</strong> 1
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>3 &lt;= s.length &lt;= 5 x 10^4</code></li>
+	<li><code>s</code>&nbsp;only consists of&nbsp;<em>a</em>, <em>b</em> or <em>c&nbsp;</em>characters.</li>
+</ul>
+"	<font color='orange'>Medium</font>	no	2391	38	90827	57643	63	50.19130357943556	difficulty-medium-tag hash-table sliding-window string	Remeber to put p2 at the end of the thing
+z(qM_P9~--	count-all-valid-pickup-and-delivery-options	1359	Count All Valid Pickup and Delivery Options	Algorithms	"<p>Given <code>n</code> orders, each order consist in pickup and delivery services.&nbsp;</p>
+
+<p>Count all valid pickup/delivery possible sequences such that delivery(i) is always after of&nbsp;pickup(i).&nbsp;</p>
+
+<p>Since the answer&nbsp;may be too large,&nbsp;return it modulo&nbsp;10^9 + 7.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> n = 1
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> Unique order (P1, D1), Delivery 1 always is after of Pickup 1.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> n = 2
+<strong>Output:</strong> 6
+<strong>Explanation:</strong> All possible orders: 
+(P1,P2,D1,D2), (P1,P2,D2,D1), (P1,D1,P2,D2), (P2,P1,D1,D2), (P2,P1,D2,D1) and (P2,D2,P1,D1).
+This is an invalid order (P1,D2,P2,D1) because Pickup 2 is after of Delivery 2.
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> n = 3
+<strong>Output:</strong> 90
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= n &lt;= 500</code></li>
+</ul>
+"	<font color='red'>Hard</font>	no	1732	152	94226	58774	62	31.080775211326095	combinatorics difficulty-hard-tag dynamic-programming math	
+i%~ZA_y&/<	design-a-stack-with-increment-operation	1381	Design a Stack With Increment Operation	Algorithms	"<p>Design a stack that supports increment operations on its elements.</p>
+
+<p>Implement the <code>CustomStack</code> class:</p>
+
+<ul>
+	<li><code>CustomStack(int maxSize)</code> Initializes the object with <code>maxSize</code> which is the maximum number of elements in the stack.</li>
+	<li><code>void push(int x)</code> Adds <code>x</code> to the top of the stack if the stack has not reached the <code>maxSize</code>.</li>
+	<li><code>int pop()</code> Pops and returns the top of the stack or <code>-1</code> if the stack is empty.</li>
+	<li><code>void inc(int k, int val)</code> Increments the bottom <code>k</code> elements of the stack by <code>val</code>. If there are less than <code>k</code> elements in the stack, increment all the elements in the stack.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input</strong>
+[&quot;CustomStack&quot;,&quot;push&quot;,&quot;push&quot;,&quot;pop&quot;,&quot;push&quot;,&quot;push&quot;,&quot;push&quot;,&quot;increment&quot;,&quot;increment&quot;,&quot;pop&quot;,&quot;pop&quot;,&quot;pop&quot;,&quot;pop&quot;]
+[[3],[1],[2],[],[2],[3],[4],[5,100],[2,100],[],[],[],[]]
+<strong>Output</strong>
+[null,null,null,2,null,null,null,null,null,103,202,201,-1]
+<strong>Explanation</strong>
+CustomStack stk = new CustomStack(3); // Stack is Empty []
+stk.push(1);                          // stack becomes [1]
+stk.push(2);                          // stack becomes [1, 2]
+stk.pop();                            // return 2 --&gt; Return top of the stack 2, stack becomes [1]
+stk.push(2);                          // stack becomes [1, 2]
+stk.push(3);                          // stack becomes [1, 2, 3]
+stk.push(4);                          // stack still [1, 2, 3], Do not add another elements as size is 4
+stk.increment(5, 100);                // stack becomes [101, 102, 103]
+stk.increment(2, 100);                // stack becomes [201, 202, 103]
+stk.pop();                            // return 103 --&gt; Return top of the stack 103, stack becomes [201, 202]
+stk.pop();                            // return 202 --&gt; Return top of the stack 202, stack becomes [201]
+stk.pop();                            // return 201 --&gt; Return top of the stack 201, stack becomes []
+stk.pop();                            // return -1 --&gt; Stack is empty return -1.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= maxSize, x, k &lt;= 1000</code></li>
+	<li><code>0 &lt;= val &lt;= 100</code></li>
+	<li>At most <code>1000</code> calls will be made to each method of <code>increment</code>, <code>push</code> and <code>pop</code> each separately.</li>
+</ul>
+"	<font color='orange'>Medium</font>	no	1598	82	120579	92942	77	34.0889683588689	array design difficulty-medium-tag stack	Remeber you are working on designing a stack, only the last value needs to be valid at a time, Think about using a lazy evaluation approch
+A7=W9W0Z}t	maximum-number-of-vowels-in-a-substring-of-given-length	1456	Maximum Number of Vowels in a Substring of Given Length	Algorithms	"<p>Given a string <code>s</code> and an integer <code>k</code>, return <em>the maximum number of vowel letters in any substring of </em><code>s</code><em> with length </em><code>k</code>.</p>
+
+<p><strong>Vowel letters</strong> in English are <code>&#39;a&#39;</code>, <code>&#39;e&#39;</code>, <code>&#39;i&#39;</code>, <code>&#39;o&#39;</code>, and <code>&#39;u&#39;</code>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;abciiidef&quot;, k = 3
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> The substring &quot;iii&quot; contains 3 vowel letters.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;aeiou&quot;, k = 2
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> Any substring of length 2 contains 2 vowels.
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;leetcode&quot;, k = 3
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> &quot;lee&quot;, &quot;eet&quot; and &quot;ode&quot; contain 2 vowels.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>s</code> consists of lowercase English letters.</li>
+	<li><code>1 &lt;= k &lt;= s.length</code></li>
+</ul>
+"	<font color='orange'>Medium</font>	no	2625	86	235072	138697	59	40.205501828856114	difficulty-medium-tag sliding-window string	
+Nauzz!2x|a	final-prices-with-a-special-discount-in-a-shop	1475	Final Prices With a Special Discount in a Shop	Algorithms	"<p>You are given an integer array <code>prices</code> where <code>prices[i]</code> is the price of the <code>i<sup>th</sup></code> item in a shop.</p>
+
+<p>There is a special discount for items in the shop. If you buy the <code>i<sup>th</sup></code> item, then you will receive a discount equivalent to <code>prices[j]</code> where <code>j</code> is the minimum index such that <code>j &gt; i</code> and <code>prices[j] &lt;= prices[i]</code>. Otherwise, you will not receive any discount at all.</p>
+
+<p>Return an integer array <code>answer</code> where <code>answer[i]</code> is the final price you will pay for the <code>i<sup>th</sup></code> item of the shop, considering the special discount.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> prices = [8,4,6,2,3]
+<strong>Output:</strong> [4,2,4,2,3]
+<strong>Explanation:</strong> 
+For item 0 with price[0]=8 you will receive a discount equivalent to prices[1]=4, therefore, the final price you will pay is 8 - 4 = 4.
+For item 1 with price[1]=4 you will receive a discount equivalent to prices[3]=2, therefore, the final price you will pay is 4 - 2 = 2.
+For item 2 with price[2]=6 you will receive a discount equivalent to prices[3]=2, therefore, the final price you will pay is 6 - 2 = 4.
+For items 3 and 4 you will not receive any discount at all.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> prices = [1,2,3,4,5]
+<strong>Output:</strong> [1,2,3,4,5]
+<strong>Explanation:</strong> In this case, for all items, you will not receive any discount at all.
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> prices = [10,1,1,6]
+<strong>Output:</strong> [9,0,1,6]
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= prices.length &lt;= 500</code></li>
+	<li><code>1 &lt;= prices[i] &lt;= 1000</code></li>
+</ul>
+"	<font color='green'>Easy</font>	no	1710	94	143700	109457	76	7.8659929978327146	array difficulty-easy-tag monotonic-stack stack	Montonic stack can be used to keep track of the closest bigger or smaller number to an index
+vKmyfOiJy.	longest-subarray-of-1s-after-deleting-one-element	1493	Longest Subarray of 1's After Deleting One Element	Algorithms	"<p>Given a binary array <code>nums</code>, you should delete one element from it.</p>
+
+<p>Return <em>the size of the longest non-empty subarray containing only </em><code>1</code><em>&#39;s in the resulting array</em>. Return <code>0</code> if there is no such subarray.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,1,0,1]
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> After deleting the number in position 2, [1,1,1] contains 3 numbers with value of 1&#39;s.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [0,1,1,1,0,1,1,0,1]
+<strong>Output:</strong> 5
+<strong>Explanation:</strong> After deleting the number in position 4, [0,1,1,1,1,1,0,1] longest subarray with value of 1&#39;s is [1,1,1,1,1].
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,1,1]
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> You must delete one element.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>
+</ul>
+"	<font color='orange'>Medium</font>	no	1560	30	108055	65824	60	54.9956690760946	array difficulty-medium-tag dynamic-programming sliding-window	Write out what u mean to code in english
+DcUg[U`7^f	kth-missing-positive-number	1539	Kth Missing Positive Number	Algorithms	"<p>Given an array <code>arr</code> of positive integers sorted in a <strong>strictly increasing order</strong>, and an integer <code>k</code>.</p>
+
+<p>Return <em>the</em> <code>k<sup>th</sup></code> <em><strong>positive</strong> integer that is <strong>missing</strong> from this array.</em></p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> arr = [2,3,4,7,11], k = 5
+<strong>Output:</strong> 9
+<strong>Explanation: </strong>The missing positive integers are [1,5,6,8,9,10,12,13,...]. The 5<sup>th</sup>&nbsp;missing positive integer is 9.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> arr = [1,2,3,4], k = 2
+<strong>Output:</strong> 6
+<strong>Explanation: </strong>The missing positive integers are [5,6,7,...]. The 2<sup>nd</sup> missing positive integer is 6.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= arr.length &lt;= 1000</code></li>
+	<li><code>1 &lt;= arr[i] &lt;= 1000</code></li>
+	<li><code>1 &lt;= k &lt;= 1000</code></li>
+	<li><code>arr[i] &lt; arr[j]</code> for <code>1 &lt;= i &lt; j &lt;= arr.length</code></li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong></p>
+
+<p>Could you solve this problem in less than O(n) complexity?</p>
+"	<font color='green'>Easy</font>	no	5332	342	523362	306647	58	72.96021133555179	array binary-search difficulty-easy-tag	Compare with proper place in array to find crit
+f){Cd3v3S!	maximum-nesting-depth-of-the-parentheses	1614	Maximum Nesting Depth of the Parentheses	Algorithms	"<p>A string is a <strong>valid parentheses string</strong> (denoted <strong>VPS</strong>) if it meets one of the following:</p>
+
+<ul>
+	<li>It is an empty string <code>&quot;&quot;</code>, or a single character not equal to <code>&quot;(&quot;</code> or <code>&quot;)&quot;</code>,</li>
+	<li>It can be written as <code>AB</code> (<code>A</code> concatenated with <code>B</code>), where <code>A</code> and <code>B</code> are <strong>VPS</strong>&#39;s, or</li>
+	<li>It can be written as <code>(A)</code>, where <code>A</code> is a <strong>VPS</strong>.</li>
+</ul>
+
+<p>We can similarly define the <strong>nesting depth</strong> <code>depth(S)</code> of any VPS <code>S</code> as follows:</p>
+
+<ul>
+	<li><code>depth(&quot;&quot;) = 0</code></li>
+	<li><code>depth(C) = 0</code>, where <code>C</code> is a string with a single character not equal to <code>&quot;(&quot;</code> or <code>&quot;)&quot;</code>.</li>
+	<li><code>depth(A + B) = max(depth(A), depth(B))</code>, where <code>A</code> and <code>B</code> are <strong>VPS</strong>&#39;s.</li>
+	<li><code>depth(&quot;(&quot; + A + &quot;)&quot;) = 1 + depth(A)</code>, where <code>A</code> is a <strong>VPS</strong>.</li>
+</ul>
+
+<p>For example, <code>&quot;&quot;</code>, <code>&quot;()()&quot;</code>, and <code>&quot;()(()())&quot;</code> are <strong>VPS</strong>&#39;s (with nesting depths 0, 1, and 2), and <code>&quot;)(&quot;</code> and <code>&quot;(()&quot;</code> are not <strong>VPS</strong>&#39;s.</p>
+
+<p>Given a <strong>VPS</strong> represented as string <code>s</code>, return <em>the <strong>nesting depth</strong> of </em><code>s</code>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;(1+(2*3)+((<u>8</u>)/4))+1&quot;
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> Digit 8 is inside of 3 nested parentheses in the string.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;(1)+((2))+(((<u>3</u>)))&quot;
+<strong>Output:</strong> 3
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 100</code></li>
+	<li><code>s</code> consists of digits <code>0-9</code> and characters <code>&#39;+&#39;</code>, <code>&#39;-&#39;</code>, <code>&#39;*&#39;</code>, <code>&#39;/&#39;</code>, <code>&#39;(&#39;</code>, and <code>&#39;)&#39;</code>.</li>
+	<li>It is guaranteed that parentheses expression <code>s</code> is a <strong>VPS</strong>.</li>
+</ul>
+"	<font color='green'>Easy</font>	no	1464	238	159761	131008	82	25.556789803738322	difficulty-easy-tag stack string	
+l!3j08[sC`	maximum-font-to-fit-a-sentence-in-a-screen	1618	Maximum Font to Fit a Sentence in a Screen	Algorithms	"<p>You are given a string <code>text</code>. We want to display <code>text</code> on a screen of width <code>w</code> and height <code>h</code>. You can choose any font size from array <code>fonts</code>, which contains the available font sizes <strong>in ascending order</strong>.</p>
+
+<p>You can use the <code>FontInfo</code> interface to get the width and height of any character at any available font size.</p>
+
+<p>The <code>FontInfo</code> interface is defined as such:</p>
+
+<pre>
+interface FontInfo {
+  // Returns the width of character ch on the screen using font size fontSize.
+  // O(1) per call
+  public int getWidth(int fontSize, char ch);
+
+  // Returns the height of any character on the screen using font size fontSize.
+  // O(1) per call
+  public int getHeight(int fontSize);
+}</pre>
+
+<p>The calculated width of <code>text</code> for some <code>fontSize</code> is the <strong>sum</strong> of every <code>getWidth(fontSize, text[i])</code> call for each <code>0 &lt;= i &lt; text.length</code> (<strong>0-indexed</strong>). The calculated height of <code>text</code> for some <code>fontSize</code> is <code>getHeight(fontSize)</code>. Note that <code>text</code> is displayed on a <strong>single line</strong>.</p>
+
+<p>It is guaranteed that <code>FontInfo</code> will return the same value if you call <code>getHeight</code> or <code>getWidth</code> with the same parameters.</p>
+
+<p>It is also guaranteed that for any font size <code>fontSize</code> and any character <code>ch</code>:</p>
+
+<ul>
+	<li><code>getHeight(fontSize) &lt;= getHeight(fontSize+1)</code></li>
+	<li><code>getWidth(fontSize, ch) &lt;= getWidth(fontSize+1, ch)</code></li>
+</ul>
+
+<p>Return <em>the maximum font size you can use to display </em><code>text</code><em> on the screen</em>. If <code>text</code> cannot fit on the display with any font size, return <code>-1</code>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> text = &quot;helloworld&quot;, w = 80, h = 20, fonts = [6,8,10,12,14,16,18,24,36]
+<strong>Output:</strong> 6
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> text = &quot;leetcode&quot;, w = 1000, h = 50, fonts = [1,2,4]
+<strong>Output:</strong> 4
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> text = &quot;easyquestion&quot;, w = 100, h = 100, fonts = [10,15,20,25]
+<strong>Output:</strong> -1
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= text.length &lt;= 50000</code></li>
+	<li><code>text</code> contains only lowercase English letters.</li>
+	<li><code>1 &lt;= w &lt;= 10<sup>7</sup></code></li>
+	<li><code>1 &lt;= h &lt;= 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= fonts.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= fonts[i] &lt;= 10<sup>5</sup></code></li>
+	<li><code>fonts</code> is sorted in ascending order and does not contain duplicates.</li>
+</ul>"	<font color='orange'>Medium</font>	yes	102	21	10501	6306	60	0	array binary-search difficulty-medium-tag interactive string	
+g%#/Z~@N;	distinct-numbers-in-each-subarray	1852	Distinct Numbers in Each Subarray	Algorithms	"<p>Given an integer array <code>nums</code> and an integer <code>k</code>, you are asked to construct the array <code>ans</code> of size <code>n-k+1</code> where <code>ans[i]</code> is the number of <strong>distinct</strong> numbers in the subarray <code>nums[i:i+k-1] = [nums[i], nums[i+1], ..., nums[i+k-1]]</code>.</p>
+
+<p>Return <em>the array </em><code>ans</code>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,2,3,2,2,1,3], k = 3
+<strong>Output:</strong> [3,2,2,2,3]
+<strong>Explanation: </strong>The number of distinct elements in each subarray goes as follows:
+- nums[0:2] = [1,2,3] so ans[0] = 3
+- nums[1:3] = [2,3,2] so ans[1] = 2
+- nums[2:4] = [3,2,2] so ans[2] = 2
+- nums[3:5] = [2,2,1] so ans[3] = 2
+- nums[4:6] = [2,1,3] so ans[4] = 3
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [1,1,1,1,2,3,4], k = 4
+<strong>Output:</strong> [1,2,3,4]
+<strong>Explanation: </strong>The number of distinct elements in each subarray goes as follows:
+- nums[0:3] = [1,1,1,1] so ans[0] = 1
+- nums[1:4] = [1,1,1,2] so ans[1] = 2
+- nums[2:5] = [1,1,2,3] so ans[2] = 3
+- nums[3:6] = [1,2,3,4] so ans[3] = 4
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= k &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
+</ul>"	<font color='orange'>Medium</font>	yes	112	8	8235	5860	71	0	array difficulty-medium-tag hash-table sliding-window	
+M#3?E>%v2`	count-pairs-in-two-arrays	1885	Count Pairs in Two Arrays	Algorithms	"<p>Given two integer arrays <code>nums1</code> and <code>nums2</code> of length <code>n</code>, count the pairs of indices <code>(i, j)</code> such that <code>i &lt; j</code> and <code>nums1[i] + nums1[j] &gt; nums2[i] + nums2[j]</code>.</p>
+
+<p>Return <em>the <strong>number of pairs</strong> satisfying the condition.</em></p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums1 = [2,1,2,1], nums2 = [1,2,1,2]
+<strong>Output:</strong> 1
+<strong>Explanation</strong>: The pairs satisfying the condition are:
+- (0, 2) where 2 + 2 &gt; 1 + 1.</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums1 = [1,10,6,2], nums2 = [1,4,1,5]
+<strong>Output:</strong> 5
+<strong>Explanation</strong>: The pairs satisfying the condition are:
+- (0, 1) where 1 + 10 &gt; 1 + 4.
+- (0, 2) where 1 + 6 &gt; 1 + 1.
+- (1, 2) where 10 + 6 &gt; 4 + 1.
+- (1, 3) where 10 + 2 &gt; 4 + 5.
+- (2, 3) where 6 + 2 &gt; 1 + 5.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>n == nums1.length == nums2.length</code></li>
+	<li><code>1 &lt;= n &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= nums1[i], nums2[i] &lt;= 10<sup>5</sup></code></li>
+</ul>
+"	<font color='orange'>Medium</font>	yes	154	10	7993	4734	59	0	array binary-search difficulty-medium-tag sorting	
+qTPi!cunlR	kth-smallest-subarray-sum	1918	Kth Smallest Subarray Sum	Algorithms	"<p>Given an integer array <code>nums</code> of length <code>n</code> and an integer <code>k</code>, return <em>the </em><code>k<sup>th</sup></code> <em><strong>smallest subarray sum</strong>.</em></p>
+
+<p>A <strong>subarray</strong> is defined as a <strong>non-empty</strong> contiguous sequence of elements in an array. A <strong>subarray sum</strong> is the sum of all elements in the subarray.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [2,1,3], k = 4
+<strong>Output:</strong> 3
+<strong>Explanation: </strong>The subarrays of [2,1,3] are:
+- [2] with sum 2
+- [1] with sum 1
+- [3] with sum 3
+- [2,1] with sum 3
+- [1,3] with sum 4
+- [2,1,3] with sum 6 
+Ordering the sums from smallest to largest gives 1, 2, 3, <u>3</u>, 4, 6. The 4th smallest is 3.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [3,3,5,5], k = 7
+<strong>Output:</strong> 10
+<strong>Explanation: </strong>The subarrays of [3,3,5,5] are:
+- [3] with sum 3
+- [3] with sum 3
+- [5] with sum 5
+- [5] with sum 5
+- [3,3] with sum 6
+- [3,5] with sum 8
+- [5,5] with sum 10
+- [3,3,5], with sum 11
+- [3,5,5] with sum 13
+- [3,3,5,5] with sum 16
+Ordering the sums from smallest to largest gives 3, 3, 5, 5, 6, 8, <u>10</u>, 11, 13, 16. The 7th smallest is 10.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>n == nums.length</code></li>
+	<li><code>1 &lt;= n&nbsp;&lt;= 2 * 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 5 * 10<sup>4</sup></code></li>
+	<li><code>1 &lt;= k &lt;= n * (n + 1) / 2</code></li>
+</ul>
+"	<font color='orange'>Medium</font>	yes	173	8	6426	3376	52	53.22355642128647	array binary-search difficulty-medium-tag sliding-window	
+kFT%w9!uYF	minimum-number-of-swaps-to-make-the-string-balanced	1963	Minimum Number of Swaps to Make the String Balanced	Algorithms	"<p>You are given a <strong>0-indexed</strong> string <code>s</code> of <strong>even</strong> length <code>n</code>. The string consists of <strong>exactly</strong> <code>n / 2</code> opening brackets <code>&#39;[&#39;</code> and <code>n / 2</code> closing brackets <code>&#39;]&#39;</code>.</p>
+
+<p>A string is called <strong>balanced</strong> if and only if:</p>
+
+<ul>
+	<li>It is the empty string, or</li>
+	<li>It can be written as <code>AB</code>, where both <code>A</code> and <code>B</code> are <strong>balanced</strong> strings, or</li>
+	<li>It can be written as <code>[C]</code>, where <code>C</code> is a <strong>balanced</strong> string.</li>
+</ul>
+
+<p>You may swap the brackets at <strong>any</strong> two indices <strong>any</strong> number of times.</p>
+
+<p>Return <em>the <strong>minimum</strong> number of swaps to make </em><code>s</code> <em><strong>balanced</strong></em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;][][&quot;
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> You can make the string balanced by swapping index 0 with index 3.
+The resulting string is &quot;[[]]&quot;.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;]]][[[&quot;
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> You can do the following to make the string balanced:
+- Swap index 0 with index 4. s = &quot;[]][][&quot;.
+- Swap index 1 with index 5. s = &quot;[[][]]&quot;.
+The resulting string is &quot;[[][]]&quot;.
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;[]&quot;
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> The string is already balanced.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>n == s.length</code></li>
+	<li><code>2 &lt;= n &lt;= 10<sup>6</sup></code></li>
+	<li><code>n</code> is even.</li>
+	<li><code>s[i]</code> is either <code>&#39;[&#39; </code>or <code>&#39;]&#39;</code>.</li>
+	<li>The number of opening brackets <code>&#39;[&#39;</code> equals <code>n / 2</code>, and the number of closing brackets <code>&#39;]&#39;</code> equals <code>n / 2</code>.</li>
+</ul>
+"	<font color='orange'>Medium</font>	no	1429	48	68316	47360	69	52.77356544617281	difficulty-medium-tag greedy stack string two-pointers	
+oy`(5!U1N>	pour-water-between-buckets-to-make-water-levels-equal	2137	Pour Water Between Buckets to Make Water Levels Equal	Algorithms	"<p>You have <code>n</code> buckets each containing some gallons of water in it, represented by a <strong>0-indexed</strong> integer array <code>buckets</code>, where the <code>i<sup>th</sup></code> bucket contains <code>buckets[i]</code> gallons of water. You are also given an integer <code>loss</code>.</p>
+
+<p>You want to make the amount of water in each bucket equal. You can pour any amount of water from one bucket to another bucket (not necessarily an integer). However, every time you pour <code>k</code> gallons of water, you spill <code>loss</code> <strong>percent</strong> of <code>k</code>.</p>
+
+<p>Return <em>the <strong>maximum</strong> amount of water in each bucket after making the amount of water equal. </em>Answers within <code>10<sup>-5</sup></code> of the actual answer will be accepted.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> buckets = [1,2,7], loss = 80
+<strong>Output:</strong> 2.00000
+<strong>Explanation:</strong> Pour 5 gallons of water from buckets[2] to buckets[0].
+5 * 80% = 4 gallons are spilled and buckets[0] only receives 5 - 4 = 1 gallon of water.
+All buckets have 2 gallons of water in them so return 2.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> buckets = [2,4,6], loss = 50
+<strong>Output:</strong> 3.50000
+<strong>Explanation:</strong> Pour 0.5 gallons of water from buckets[1] to buckets[0].
+0.5 * 50% = 0.25 gallons are spilled and buckets[0] only receives 0.5 - 0.25 = 0.25 gallons of water.
+Now, buckets = [2.25, 3.5, 6].
+Pour 2.5 gallons of water from buckets[2] to buckets[0].
+2.5 * 50% = 1.25 gallons are spilled and buckets[0] only receives 2.5 - 1.25 = 1.25 gallons of water.
+All buckets have 3.5 gallons of water in them so return 3.5.
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> buckets = [3,3,3,3], loss = 40
+<strong>Output:</strong> 3.00000
+<strong>Explanation:</strong> All buckets already have the same amount of water in them.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= buckets.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>0 &lt;= buckets[i] &lt;= 10<sup>5</sup></code></li>
+	<li><code>0 &lt;= loss &lt;= 99</code></li>
+</ul>
+"	<font color='orange'>Medium</font>	yes	81	6	2688	1804	67	0	array binary-search difficulty-medium-tag	BInary search but on continuous, plus error rather than plus one
+JJ1]OGrc)0	maximum-number-of-groups-entering-a-competition	2358	Maximum Number of Groups Entering a Competition	Algorithms	"<p>You are given a positive integer array <code>grades</code> which represents the grades of students in a university. You would like to enter <strong>all</strong> these students into a competition in <strong>ordered</strong> non-empty groups, such that the ordering meets the following conditions:</p>
+
+<ul>
+	<li>The sum of the grades of students in the <code>i<sup>th</sup></code> group is <strong>less than</strong> the sum of the grades of students in the <code>(i + 1)<sup>th</sup></code> group, for all groups (except the last).</li>
+	<li>The total number of students in the <code>i<sup>th</sup></code> group is <strong>less than</strong> the total number of students in the <code>(i + 1)<sup>th</sup></code> group, for all groups (except the last).</li>
+</ul>
+
+<p>Return <em>the <strong>maximum</strong> number of groups that can be formed</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> grades = [10,6,12,7,3,5]
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> The following is a possible way to form 3 groups of students:
+- 1<sup>st</sup> group has the students with grades = [12]. Sum of grades: 12. Student count: 1
+- 2<sup>nd</sup> group has the students with grades = [6,7]. Sum of grades: 6 + 7 = 13. Student count: 2
+- 3<sup>rd</sup> group has the students with grades = [10,3,5]. Sum of grades: 10 + 3 + 5 = 18. Student count: 3
+It can be shown that it is not possible to form more than 3 groups.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> grades = [8,8]
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> We can only form 1 group, since forming 2 groups would lead to an equal number of students in both groups.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= grades.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= grades[i] &lt;= 10<sup>5</sup></code></li>
+</ul>
+"	<font color='orange'>Medium</font>	no	523	94	44170	29854	67	21.881994547715685	array binary-search difficulty-medium-tag greedy math	Feasiblity based on math pattern
+e#FyZzuK/d	frog-jump-ii	2498	Frog Jump II	Algorithms	"<p>You are given a <strong>0-indexed</strong> integer array <code>stones</code> sorted in <strong>strictly increasing order</strong> representing the positions of stones in a river.</p>
+
+<p>A frog, initially on the first stone, wants to travel to the last stone and then return to the first stone. However, it can jump to any stone <strong>at most once</strong>.</p>
+
+<p>The <strong>length</strong> of a jump is the absolute difference between the position of the stone the frog is currently on and the position of the stone to which the frog jumps.</p>
+
+<ul>
+	<li>More formally, if the frog is at <code>stones[i]</code> and is jumping to <code>stones[j]</code>, the length of the jump is <code>|stones[i] - stones[j]|</code>.</li>
+</ul>
+
+<p>The <strong>cost</strong> of a path is the <strong>maximum length of a jump</strong> among all jumps in the path.</p>
+
+<p>Return <em>the <strong>minimum</strong> cost of a path for the frog</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+<img alt="""" src=""https://assets.leetcode.com/uploads/2022/11/14/example-1.png"" style=""width: 600px; height: 219px;"" />
+<pre>
+<strong>Input:</strong> stones = [0,2,5,6,7]
+<strong>Output:</strong> 5
+<strong>Explanation:</strong> The above figure represents one of the optimal paths the frog can take.
+The cost of this path is 5, which is the maximum length of a jump.
+Since it is not possible to achieve a cost of less than 5, we return it.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+<img alt="""" src=""https://assets.leetcode.com/uploads/2022/11/14/example-2.png"" style=""width: 500px; height: 171px;"" />
+<pre>
+<strong>Input:</strong> stones = [0,3,9]
+<strong>Output:</strong> 9
+<strong>Explanation:</strong> 
+The frog can jump directly to the last stone and come back to the first stone. 
+In this case, the length of each jump will be 9. The cost for the path will be max(9, 9) = 9.
+It can be shown that this is the minimum achievable cost.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>2 &lt;= stones.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>0 &lt;= stones[i] &lt;= 10<sup>9</sup></code></li>
+	<li><code>stones[0] == 0</code></li>
+	<li><code>stones</code> is sorted in a strictly increasing order.</li>
+</ul>
+"	<font color='orange'>Medium</font>	no	410	69	20405	12412	60	67.80671342210786	array binary-search difficulty-medium-tag greedy	Every other stone
+nQ>V~D]<nr	take-k-of-each-character-from-left-and-right	2516	Take K of Each Character From Left and Right	Algorithms	"<p>You are given a string <code>s</code> consisting of the characters <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code>, and <code>&#39;c&#39;</code> and a non-negative integer <code>k</code>. Each minute, you may take either the <strong>leftmost</strong> character of <code>s</code>, or the <strong>rightmost</strong> character of <code>s</code>.</p>
+
+<p>Return<em> the <strong>minimum</strong> number of minutes needed for you to take <strong>at least</strong> </em><code>k</code><em> of each character, or return </em><code>-1</code><em> if it is not possible to take </em><code>k</code><em> of each character.</em></p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;aabaaaacaabc&quot;, k = 2
+<strong>Output:</strong> 8
+<strong>Explanation:</strong> 
+Take three characters from the left of s. You now have two &#39;a&#39; characters, and one &#39;b&#39; character.
+Take five characters from the right of s. You now have four &#39;a&#39; characters, two &#39;b&#39; characters, and two &#39;c&#39; characters.
+A total of 3 + 5 = 8 minutes is needed.
+It can be proven that 8 is the minimum number of minutes needed.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> s = &quot;a&quot;, k = 1
+<strong>Output:</strong> -1
+<strong>Explanation:</strong> It is not possible to take one &#39;b&#39; or &#39;c&#39; so return -1.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>s</code> consists of only the letters <code>&#39;a&#39;</code>, <code>&#39;b&#39;</code>, and <code>&#39;c&#39;</code>.</li>
+	<li><code>0 &lt;= k &lt;= s.length</code></li>
+</ul>
+"	<font color='orange'>Medium</font>	no	559	54	33304	11325	34	45.222688943230644	difficulty-medium-tag hash-table sliding-window string	1. Try and disprove a greedy solution 2. Go back to drawing board if things dont work 3. Check what your inital variables are before you start the main loop, do they match whats in your head
+vXf^pL>x@h	maximum-count-of-positive-integer-and-negative-integer	2529	Maximum Count of Positive Integer and Negative Integer	Algorithms	"<p>Given an array <code>nums</code> sorted in <strong>non-decreasing</strong> order, return <em>the maximum between the number of positive integers and the number of negative integers.</em></p>
+
+<ul>
+	<li>In other words, if the number of positive integers in <code>nums</code> is <code>pos</code> and the number of negative integers is <code>neg</code>, then return the maximum of <code>pos</code> and <code>neg</code>.</li>
+</ul>
+
+<p><strong>Note</strong> that <code>0</code> is neither positive nor negative.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [-2,-1,-1,1,2,3]
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> There are 3 positive integers and 3 negative integers. The maximum count among them is 3.
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [-3,-2,-1,0,0,1,2]
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> There are 2 positive integers and 3 negative integers. The maximum count among them is 3.
+</pre>
+
+<p><strong class=""example"">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [5,20,66,1314]
+<strong>Output:</strong> 4
+<strong>Explanation:</strong> There are 4 positive integers and 0 negative integers. The maximum count among them is 4.
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 2000</code></li>
+	<li><code>-2000 &lt;= nums[i] &lt;= 2000</code></li>
+	<li><code>nums</code> is sorted in a <strong>non-decreasing order</strong>.</li>
+</ul>
+
+<p>&nbsp;</p>
+<p><strong>Follow up:</strong> Can you solve the problem in <code>O(log(n))</code> time complexity?</p>
+"	<font color='green'>Easy</font>	no	493	25	73524	54272	73	15.573948735117302	array binary-search counting difficulty-easy-tag	
+F(fO,$_Q%A	maximize-win-from-two-segments	2555	Maximize Win From Two Segments	Algorithms	"<p>There are some prizes on the <strong>X-axis</strong>. You are given an integer array <code>prizePositions</code> that is <strong>sorted in non-decreasing order</strong>, where <code>prizePositions[i]</code> is the position of the <code>i<sup>th</sup></code> prize. There could be different prizes at the same position on the line. You are also given an integer <code>k</code>.</p>
+
+<p>You are allowed to select two segments with integer endpoints. The length of each segment must be <code>k</code>. You will collect all prizes whose position falls within at least one of the two selected segments (including the endpoints of the segments). The two selected segments may intersect.</p>
+
+<ul>
+	<li>For example if <code>k = 2</code>, you can choose segments <code>[1, 3]</code> and <code>[2, 4]</code>, and you will win any prize <font face=""monospace"">i</font> that satisfies <code>1 &lt;= prizePositions[i] &lt;= 3</code> or <code>2 &lt;= prizePositions[i] &lt;= 4</code>.</li>
+</ul>
+
+<p>Return <em>the <strong>maximum</strong> number of prizes you can win if you choose the two segments optimally</em>.</p>
+
+<p>&nbsp;</p>
+<p><strong class=""example"">Example 1:</strong></p>
+
+<pre>
+<strong>Input:</strong> prizePositions = [1,1,2,2,3,3,5], k = 2
+<strong>Output:</strong> 7
+<strong>Explanation:</strong> In this example, you can win all 7 prizes by selecting two segments [1, 3] and [3, 5].
+</pre>
+
+<p><strong class=""example"">Example 2:</strong></p>
+
+<pre>
+<strong>Input:</strong> prizePositions = [1,2,3,4], k = 0
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> For this example, <strong>one choice</strong> for the segments is <code>[3, 3]</code> and <code>[4, 4],</code> and you will be able to get <code>2</code> prizes. 
+</pre>
+
+<p>&nbsp;</p>
+<p><strong>Constraints:</strong></p>
+
+<ul>
+	<li><code>1 &lt;= prizePositions.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>1 &lt;= prizePositions[i] &lt;= 10<sup>9</sup></code></li>
+	<li><code>0 &lt;= k &lt;= 10<sup>9</sup> </code></li>
+	<li><code>prizePositions</code> is sorted in non-decreasing order.</li>
+</ul>
+
+<p>&nbsp;</p>
+<style type=""text/css"">.spoilerbutton {display:block; border:dashed; padding: 0px 0px; margin:10px 0px; font-size:150%; font-weight: bold; color:#000000; background-color:cyan; outline:0; 
+}
+.spoiler {overflow:hidden;}
+.spoiler > div {-webkit-transition: all 0s ease;-moz-transition: margin 0s ease;-o-transition: all 0s ease;transition: margin 0s ease;}
+.spoilerbutton[value=""Show Message""] + .spoiler > div {margin-top:-500%;}
+.spoilerbutton[value=""Hide Message""] + .spoiler {padding:5px;}
+</style>
+"	<font color='orange'>Medium</font>	no	417	31	22600	7014	31	52.15300061318941	array binary-search difficulty-medium-tag sliding-window	1. A greedy approch doesnt work, you have to maximise everything at once. 2. Watch out for overlaps
